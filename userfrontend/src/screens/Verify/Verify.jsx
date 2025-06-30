@@ -16,8 +16,8 @@ const Verify = () => {
     const verifyPayment = async()=>{
         try {
             const response = await axios.post(url+"/api/order/verify",{success,orderId})
-            if(response.data.message==='Notpaid')
-                navigate('/')
+            if(response.data.message==='Not paid')
+                navigate('/')//res
             else
                 navigate('/myorders')
         } catch (error) {
