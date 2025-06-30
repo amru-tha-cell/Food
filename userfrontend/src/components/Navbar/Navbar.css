@@ -47,7 +47,7 @@
 .navbar .active{
     border-bottom: 2px solid #49557e;
 }
-.logo{
+.navbar .logo{
     width:200px;
 }
 .navbar-profile{
@@ -77,7 +77,7 @@
     cursor: pointer;
 }
 .nav-profile-dropdown img{
-    width:20px;
+    width:15px;
 }
 .nav-profile-dropdown li:hover{
     color:var(--theme-color)
