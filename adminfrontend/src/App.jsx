@@ -8,7 +8,8 @@ import List from './screens/List/List'
 import Orders from './screens/Orders/Orders'
 import {ToastContainer} from 'react-toastify'
 
-const url = 'http://localhost:4000'
+//const url = 'http://localhost:4000'
+const url = "https://food45.onrender.com"
 const App = () => {
   return (
     <div className='app'>

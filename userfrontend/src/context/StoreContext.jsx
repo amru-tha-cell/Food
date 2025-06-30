@@ -7,7 +7,8 @@ export const StoreContext = createContext();
 export const StoreContextProvider =(props) =>{
     const [cartItem,setCartItem] = useState({})
     const [food_list,setFoodList] = useState([])
-    const url = "http://localhost:4000"
+    //const url = "http://localhost:4000"
+    const url = "https://food45.onrender.com"
     const [token,setToken] = useState("")
     const fetchFoodList = async()=>{
         const response = await axios.get(url+'/api/food/list')
