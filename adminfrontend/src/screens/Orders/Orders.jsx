@@ -38,7 +38,7 @@ const Orders = ({url}) => {
                 if(itemIndex===order.items.length-1)
                   return item.name+" x "+item.quantity
                 else
-                  return item.nme+" x "+item.quantity+", "
+                  return item.name+" x "+item.quantity+", "
               })}
                 </p>
                 <p className="order-item-name">{order.address.first_name+" "+order.address.last_name}</p>

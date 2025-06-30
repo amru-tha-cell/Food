@@ -124,3 +124,36 @@
         display:none;
     }
 }
+@media (max-width: 400px) {
+  .navbar {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar .logo {
+    width: 120px;
+  }
+
+  .navbar-right {
+    gap: 12px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar button {
+    padding: 6px 14px;
+    font-size: 1.4rem;
+  }
+
+  .navbar-profile {
+    position: relative;
+  }
+
+  .nav-profile-dropdown {
+    right: -40px;
+    padding: 10px 14px;
+  }
+}

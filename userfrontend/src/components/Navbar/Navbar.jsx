@@ -4,16 +4,16 @@ import './Navbar.css'
 import {Link, useNavigate} from 'react-router-dom'
 import { useState } from 'react'
 import { StoreContext } from '../../context/StoreContext'
-import { useEffect } from 'react'
-
 const Navbar = ({showLogin,setShowLogin}) => {
   const [menu,setMenu] = useState('home')
-  const {getTotalCartAmount,token,setToken} = useContext(StoreContext);
+  const {getTotalCartAmount,token,setToken,setCartItem} = useContext(StoreContext);
   const navigate = useNavigate()
+  
   const logout=()=>{
     localStorage.removeItem("token");
-    setToken("")
-    navigate('/')
+    setToken("");
+    setCartItem({});
+    navigate('/');
   }
   return (
     <div className='navbar'>

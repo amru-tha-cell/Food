@@ -45,13 +45,42 @@
     background-color: grey;
     border:none;
 }
-@media(max-width:750px){
-    .footer-contents{
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-    }
-    .footer-copy-right{
-        text-align: center;
-    }
+@media (max-width: 750px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-social-icons img {
+    width: 32px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 20px 5vw;
+  }
+
+  .footer-content {
+    gap: 20px;
+  }
+
+  .footer-center h2,
+  .footer-right h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-center li,
+  .footer-right li {
+    font-size: 0.95rem;
+  }
 }

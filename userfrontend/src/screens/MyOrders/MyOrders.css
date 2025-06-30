@@ -35,3 +35,41 @@
     cursor: pointer;
     color:#454545;
 }
+@media (max-width: 750px) {
+  .my-orders-order {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .my-orders-order img {
+    width: 40px;
+  }
+
+  .my-orders-order button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .my-orders {
+    padding: 0 10px;
+  }
+
+  .my-orders-order {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .my-orders-order img {
+    width: 35px;
+  }
+
+  .my-orders-order button {
+    padding-block: 10px;
+    font-size: 0.9rem;
+  }
+}

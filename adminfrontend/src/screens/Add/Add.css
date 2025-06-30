@@ -82,3 +82,38 @@
 .add-btn:hover {
   background-color: #222;
 }
+@media (max-width: 600px) {
+  .screen {
+    font-size: 1.4rem;
+    padding: 0 5%;
+  }
+
+  .screen form {
+    padding: 20px;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .add-img-upload img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .screen {
+    font-size: 1.3rem;
+  }
+
+  .add-product-description textarea {
+    height: 80px;
+  }
+
+  .add-img-upload img {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -27,9 +27,9 @@ export const StoreContextProvider =(props) =>{
     if (token) {
         try {
             await axios.post(url + '/api/cart/add', { itemId }, { headers: { token } });
-            //console.log("✅ Added to cart in DB:", res.data);
+            //console.log("Added to cart in DB:", res.data);
         } catch (err) {
-            console.log("❌ Error adding to cart in DB:", err.response?.data || err.message);
+            console.log("Error adding to cart in DB:", err.response?.data || err.message);
         }
     } 
     };

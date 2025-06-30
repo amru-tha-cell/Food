@@ -12,3 +12,24 @@
     gap: 30px;
     row-gap: 50px;
 }
+@media (max-width: 750px) {
+  .food-display h2 {
+    font-size: 2rem;
+  }
+
+  .food-display-list {
+    gap: 20px;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .food-display h2 {
+    font-size: 1.6rem;
+  }
+
+  .food-display-list {
+    gap: 15px;
+    row-gap: 25px;
+  }
+}

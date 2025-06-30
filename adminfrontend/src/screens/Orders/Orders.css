@@ -26,3 +26,36 @@
     padding: 10px;
     outline: none;
 }
+
+@media (max-width: 800px) {
+  .order-item {
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    font-size: 1.3rem;
+  }
+
+  .order-item select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .order-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .order-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .order-item-select {
+    width: 100%;
+    padding: 6px;
+  }
+
+  .order-item p {
+    font-size: 1.2rem;
+  }
+}

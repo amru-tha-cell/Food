@@ -33,11 +33,60 @@
 .place-order-right .cart-total button{
     margin-top: 30px;
 }
-@media(max-width:750px){
-    .place-order{
-        flex-direction: column;
-    }
-    .place-order-right{
-        margin-top: 20px;
-    }
+@media (max-width: 750px) {
+  .place-order {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .place-order-left .title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .place-order-left .multi-fields {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .place-order-left input {
+    font-size: 1rem;
+  }
+
+  .place-order-right {
+    margin-top: 20px;
+  }
+
+  .place-order-right button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .place-order-left .title {
+    font-size: 1.6rem;
+  }
+
+  .place-order-left input {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .cart-total-details p {
+    font-size: 0.95rem;
+  }
+
+  .place-order-right button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
 }
